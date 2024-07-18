@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Helvetica;
+        }
+        .menu{
+            width: 17%;
+            border-right: 1px solid #eee;
+            padding: 20px;  
+            position: fixed;
+            background-color: white;
+            top: 0px;
+            bottom: 0px;
+        }
+        .mylogo{
+            width: 150px;
+        }
+        .logo{
+            position: relative;
+        }
+        .list ul li span {
+            margin: 0px;
+            font-size: 22px;
+        }
+        .list ul li span i{
+            margin-right: 10px;
+        }
+        .list ul{
+            padding: 0px 10px;
+        }
+        .list ul li {
+            margin: 30px 0px;
+            list-style: none;
+        }
+        .profileimg img{
+            width: 28px;
+            border-radius: 50px;
+            margin-right: 10px;
+            border: 2px black solid;
+        }
+        .profiletext{
+            position: relative;
+            bottom: 10px;
+        }
+        .more span{
+            margin: 0px 8px;
+            font-size: 22px;
+        }
+        .logoin{
+            display:none;
+            width: 50px;
+        }
+        .right{
+            height: 100vh;
+            margin-left: 20%;
+            width: 80%;
+        }
+        .rightin{
+            width: 90%;
+            margin: auto;
+        }
+        .profileinfo{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: left;
+            padding-top: 50px;
+        }
+        .image1{
+            width: 10%;
+            position: relative;
+        }
+        .outer{
+            width: 203px;
+            border: 2px solid gray;
+            border-radius: 200px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profileinfo .image1 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1000px;
+            border: 1px rgb(202, 179, 179) solid;
+        }
+        .info{
+            width: 40%;
+            margin-left: 150px;
+        }
+        .text1{
+            display: inline;
+            padding: 0px 3px;
+        }
+        .info2 {
+            margin-top: 20px;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+        }
+        .text2{
+            display: inline;
+            padding: 0px 0px;
+            font-size: 20px;
+        }
+        .info3{
+            margin-top: 15px;
+        }
+        .highin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        .high1{
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .high1 img{
+            width: 100px;
+            height: 100%;
+            border-radius: 1000px;
+            border: 1px rgb(202, 179, 179) solid;
+        }
+        .gridtext{
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .gridtext ul{
+            margin-top: 20px;
+        }
+        .gridtext ul li{
+            list-style: none;
+            display: inline;
+            padding: 0px 20px;
+        }
+        .gridpost{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .post img{
+            width: 320px;
+            height: 200px; 
+        }
+
+       
+        @media (max-width:1200px){
+            .list ul li span:nth-child(2){
+                display: none;
+            }
+            .menu{
+                width: 10%;
+                min-width: 100px;
+            }
+            .mylogo{
+                display: none;
+            }
+            .logoin{
+                display: block;
+            }
+            .right{
+                width: 90%;
+            }
+
+            .rightin{
+
+                width: 100%;
+            }
+
+            .profileinfo{
+
+                justify-content: left;
+                margin: 0px 40px;
+            }
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtjBw4xwF01ZdKL1cmnYZD3vdavlQPOWA7w&s" alt="" class="mylogo"> 
+        <div class="logo"><img src="https://i.pinimg.com/736x/74/ad/a6/74ada6befabfd1a673669f39d5edcf8d.jpg" alt="" class="logoin"> </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <span>Home</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span>Search</span>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-compass"></i></span>
+                    <span>Explore</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-camera"></i></span>
+                    <span>Reels</span>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-message"></i></span>
+                    <span>Messages</span>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span>Notification</span>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-square-plus"></i></span>
+                    <span>Create</span>
+                </li>
+                <li>
+                    <span class="profileimg"><img src="71NKBGaBbTL._AC_UF894,1000_QL80_.jpg" alt=""></span>
+                    <span class="profiletext">Profile</span>
+                </li>
+            </ul>
+        </div>
+        <div class="more">
+            <span class="moreicon"><i class="fa-solid fa-bars"></i></span>
+            <span class="moretext">More</span>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="rightin">
+        <div class="profileinfo">
+            <div class="image1">
+                <div class="outer">
+                  <img src="71NKBGaBbTL._AC_UF894,1000_QL80_.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <div class="info1">
+                    <div class="text1" style="font-size: 25px;">86isha_</div>    
+                    <div class="text1"><input type="button" value="Edit Profile "></div>    
+                    <div class="text1"><input type="button" value="View archive"></div> 
+                    <div class="text1"><i class="fa-solid fa-gear" style="font-size: 25px"></i></div>
+                </div>
+                <div class="info2">
+                    <div class="text2"><b>45</b> posts</div>
+                    <div class="text2" style="padding-left: 30px;"><b>319</b> followers</div>
+                    <div class="text2" style="padding-left: 30px;"><b>347</b> following</div>
+                </div>
+                <div class="info3">
+                     <div class="text3">
+                        <b>Isha Gupta</b><br>
+                        DELULU IS THE ONLY SOLULU🫰<br>
+                        AIESEC🌍<br>
+                        Jaipur 🔄 Jodhpur <br>
+                     </div>
+                </div>
+            </div>
+        </div>
+            <div class="highin">
+                <div class="high1">
+                    <img src="360465fdd8e988b77f1e74ed9c436632.jpg" alt=""><br>
+                    Isha
+                </div>
+                <div class="high1">
+                    <img src="8b9fa079f4b9550a8eeba4d166d520c6.jpg" alt=""><br>
+                    Isha
+                </div>
+                <div class="high1">
+                    <img src="10d672a11ce5a1fa57c6cefe03f142ec.jpg" alt=""><br>
+                    Isha
+                </div>
+                <div class="high1">
+                    <img src="360465fdd8e988b77f1e74ed9c436632.jpg" alt=""><br>
+                    Isha
+                </div>
+                <div class="high1">
+                    <img src="71NKBGaBbTL._AC_UF894,1000_QL80_.jpg" alt=""><br>
+                    Isha
+                </div>
+                <div class="high1">
+                    <img src="6030576fa15e4e9f630ff2b79dfca1b3-Photoroom.jpg" alt=""><br>
+                    Isha
+                </div>
+            </div>
+        <div class="grid">
+            <div class="gridtext">
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-table-cells"></i></span>
+                        <span>POSTS</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-camera"></i></span>
+                        <span>REELS</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-bookmark"></i></span>
+                        <span>SAVED</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-circle-user"></i></span>
+                        <span>TAGGED</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="gridpost">
+                <div class="post"><img src="8b9fa079f4b9550a8eeba4d166d520c6.jpg" alt=""></div>
+                <div class="post"><img src="10d672a11ce5a1fa57c6cefe03f142ec.jpg" alt=""></div>
+                <div class="post"><img src="71NKBGaBbTL._AC_UF894,1000_QL80_.jpg" alt=""></div>
+                <div class="post"><img src="7c43a4d49a105ce326c0873427a83d2b.jpg" alt=""></div>
+                <div class="post"><img src="6030576fa15e4e9f630ff2b79dfca1b3-Photoroom.jpg" alt=""></div>
+                <div class="post"><img src="360465fdd8e988b77f1e74ed9c436632.jpg" alt=""></div>
+                <div class="post"><img src="6030576fa15e4e9f630ff2b79dfca1b3-Photoroom.jpg" alt=""></div>
+                <div class="post"><img src="8b9fa079f4b9550a8eeba4d166d520c6.jpg" alt=""></div>
+                <div class="post"><img src="10d672a11ce5a1fa57c6cefe03f142ec.jpg" alt=""></div>
+                <div class="post"><img src="71NKBGaBbTL._AC_UF894,1000_QL80_.jpg" alt=""></div>
+                <div class="post"><img src="7c43a4d49a105ce326c0873427a83d2b.jpg" alt=""></div>
+                <div class="post"><img src="6030576fa15e4e9f630ff2b79dfca1b3-Photoroom.jpg" alt=""></div>
+                <div class="post"><img src="360465fdd8e988b77f1e74ed9c436632.jpg" alt=""></div>
+                <div class="post"><img src="6030576fa15e4e9f630ff2b79dfca1b3-Photoroom.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

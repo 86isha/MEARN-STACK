@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- using class and loop -->
+    <h1>SIGN UP FORM</h1>
+
+    Name: <input type="text" class="inp" placeholder="Enter your username">
+    <br><br>
+    E-mail: <input type="email" class="inp" placeholder="Enter your Email">
+    <br><br>
+    Mobile: <input type="number" class="inp" placeholder="Enter your Mobile Number">
+    <br> <br>
+    Age: <input type="number" class="inp" placeholder="Enter your Age">
+    <br><br>
+    Password: <input type="password" class="inp" placeholder="Enter your Password">
+    <br><br>
+    <button id="btn">Submit</button>
+
+
+
+
+    <script>
+        document.getElementById("btn").onclick = function(){
+
+            let val= document.getElementsByClassName("inp");
+
+            // for(let i of val){
+            //     console.log(i.value)
+            // }
+
+            for(let i of val){
+                console.log(i)
+            }
+            // for(let i in val){
+            //     console.log(i)
+            // }
+
+            // for(let i=0; i<val.length;i++){
+
+            //     console.log(val[i].value)
+            // }
+        }
+    </script>
+</body>
+</html>

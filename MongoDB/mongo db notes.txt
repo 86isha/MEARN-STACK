@@ -1,0 +1,16 @@
+parent folder - database
+sub folder -collection
+file- document 
+each document has key value pair - Jason
+use <database> --- to make or use database 
+show dbs---
+
+empty database connot be created
+collection can be created
+show collections--to see collection
+
+db.createCollection('')--- to make collection
+
+Jason file is---- array[] of objects{}
+
+db.dropDatabase('')--- to drop database means delete

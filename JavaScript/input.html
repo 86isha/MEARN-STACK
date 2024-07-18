@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">This is my heading</h1>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="brown">Brown</button>
+    <button id="uppercase">Uppercase</button>
+    <button id="lowercase">Lowercase</button>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+
+
+    <script>
+
+        document.getElementById("red").onclick = function(){
+
+            document.getElementById("h").style.color="Red"
+        }
+
+        document.getElementById("green").onclick = function(){
+            document.getElementById("h").style.color="Green"
+        }
+
+        document.getElementById("brown").onclick = function(){
+            document.getElementById("h").style.color="Brown"
+        }
+        document.getElementById("uppercase").onclick = function(){
+            document.getElementById("h").style.textTransform="uppercase"
+        }
+        document.getElementById("lowercase").onclick = function(){
+
+            document.getElementById("h").style.textTransform="lowercase"
+        }
+
+        let counter= 34
+
+        document.getElementById("plus").onclick = function(){
+            counter++;
+            document.getElementById("h").style.fontSize = counter+"px"
+        }
+        document.getElementById("minus").onclick = function(){
+            counter--;
+            document.getElementById("h").style.fontSize = counter+"px"
+        }
+
+
+
+
+    </script>
+</body>
+</html>

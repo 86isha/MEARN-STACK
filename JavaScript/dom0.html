@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="backg">
+    <input type="text" id="inp" disabled>
+    <button id="btn">Submit</button>
+    <button id="gen">Generate</button>
+
+
+    <script>
+        // document.getElementById("btn").onclick = function(){
+
+        //     let a = document.getElementById("inp").value;
+        //     document.getElementById("backg").style.backgroundColor= a
+
+        //     console.log(a)
+        // }
+
+        // document.getElementById("gen").onclick = function(){
+
+        //     document.getElementById("inp").value = Math.random()*10000
+
+        // }
+
+        // document.getElementById("gen").onclick = function(){
+        //     let val= Math.floor(Math.random()*1000) + "," + Math.floor(Math.random()*1000) + "," + Math.floor(Math.random()*1000)
+        //     document.getElementById("inp").value = val
+        //     let a= document.getElementById("inp").value
+        //          console.log(a)
+        //         let b = document.getElementById("inp").value
+        //         document.getElementById("backg").style.backgroundColor = `rgb(${a})`   
+        // }
+
+            // document.getElementById("btn").onclick = function(){
+            //     let a= document.getElementById("inp").value
+            //      console.log(a)
+            //     let b = document.getElementById("inp").value
+            //     document.getElementById("backg").style.backgroundColor = `rgb(${a})`
+
+
+            // }
+
+            setInterval(()=>{
+            let val= Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255)
+            document.getElementById("inp").value = val
+            let a= document.getElementById("inp").value
+                 console.log(a)
+                let b = document.getElementById("inp").value
+                document.getElementById("backg").style.backgroundColor = `rgb(${a})`   
+        },3000)
+        
+            
+
+        
+    </script>
+    
+</body>
+</html>

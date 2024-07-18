@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .calc{
+            width: 500px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .display{
+            height: 80px;
+            width: 90%;
+            margin-top: 30px;
+        }
+        .display input{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+        .keys{
+            width: 90%;
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .keys button{
+            height: 40px;
+            width: 20%;
+            margin: 15px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="calc">
+        <div class="display">
+            <input type="text" id="">
+        </div>
+        <div class="keys">
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+            <button>+</button>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>-</button>
+            <button>3</button>
+            <button>2</button>
+            <button>2</button>
+            <button>/</button>
+            <button>.</button>
+            <button>0</button>
+            <button>=</button>
+            <button>*</button>  
+            <button>DEL</button>
+            <button>CLEAR</button> 
+        </div>
+    </div>
+ 
+
+    <script>
+        let a= document.querySelectorAll("button");
+        let inp= document.querySelector("input");
+
+        for(let i of a){
+
+            i.onclick = function(){
+
+                if(i.innerText == "="){
+
+                    let val= inp.value;
+                    inp.value = eval(val)
+                }
+                else if(i.innerText == "CLEAR"){
+                    inp.value =" "
+                }
+                else if(i.innerText == "DEL"){
+                    inp.value = inp.value.slice(0,-1)
+                }
+                else{
+                    inp.value+= i.innerText
+                    console.log(i.innerText)
+                }
+            }
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

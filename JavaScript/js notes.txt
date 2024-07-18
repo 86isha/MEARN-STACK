@@ -1,0 +1,68 @@
+javacript us client site language
+react js k saath it will work
+
+variables
+
+
+
+data types in javascript:
+
+1. Number= int+float
+2. string
+3. Boolean
+4. undefined
+5. null
+6. object {},[]
+** array ka data type is object only.
+
+keywords:
+1. var
+2. let ES6- 2015
+3. const ES6
+**(THEY ARE DEFINING THE DATA TYPE)
+
+LET
+-we cannot redeclare a variable, we can reassign a variable
+
+VAR
+-we can redeclare a variable as well as reassign a variable
+-it has global scope
+-interpreter based language
+
+CONST
+-we cannot redeclare as well as reassign a variable
+
+HOSTING
+-we can call function Pehle then define the function
+-
+
+HOSTING VARIABLE
+-Pehle print kr lo fir declare kr lo
+- var is hosting variable
+-
+
+prompt- user input
+conditional statements: if and else, else if mein we can have many conditions
+
+while loop:
+while loop works on bolleans
+it works on infinite
+
+
+FUNCTIONS:
+two types:
+1. annonymums- immediadetely invoked function expression(IIFE): they will have to call immediately
+2. 
+3. arrow function
+
+
+**function ko variable mein store kr lo toh woh function ka expression ho jata h(happens in ARROW FUNCTION)
+
+
+
+
+
+
+
+
+

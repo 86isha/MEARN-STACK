@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+            flex-grow: 1;
+            /* flex grow is for, when we decrese the width of scree, the whole width is covered  */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-evenly;
+            background-color: black;
+
+        }
+        .container2{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-evenly;
+            background-color: blueviolet;
+            flex-direction: column-reverse;
+        }
+        .container3{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex wrap is for breaking the width omn next ehile decreasing the length */
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+            justify-content: space-evenly;
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            padding: 10px;
+            box-sizing: border-box;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">Isha this side, this is my boxsizing assignment.</div>
+    <div class="box">Isha this side, this is my boxsizing assignment.</div>
+    <div class="box">Isha this side, this is my boxsizing assignment.</div>
+    <div class="box">Isha this side, this is my boxsizing assignment.</div>
+    </div>
+    <div class="container2">
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+    </div>
+    <div class="container3">
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+        <div class="box">Isha this side, this is my boxsizing assignment.</div>
+    </div>
+</body>
+</html>
