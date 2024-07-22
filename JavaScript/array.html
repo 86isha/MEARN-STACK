@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #printarray{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <input type="text" >
+    <button id="array">Add To Array</button>
+    <button id="print">Print Name</button>
+    <div id="printarray"></div>
+
+    <script>
+        let a = [];
+        
+        document.getElementById("array").onclick=()=>{
+
+            let val= document.querySelector("input").value;
+            document.querySelector("input").value=''
+            document.querySelector("input").focus()
+            a.push(val)
+            console.log(val)
+        }
+        
+
+        document.getElementById("print").onclick=()=>{
+            let count =0
+            let s = setInterval(()=>
+            {
+                if(count== a.length -1){
+                    document.getElementById("printarray").innerText +=" " + a[count]
+                }
+                else if (count == a.length){
+                    clearInterval(s)
+                }
+                else{
+                    document.getElementById("printarray").innerText += " " +a[count] + ", "
+                }
+                count++
+            },1000)
+        }
+         
+
+
+      
+    </script>
+
+    
+</body>
+</html>

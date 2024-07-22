@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="backg">
+    <h1 id="head">This is my range</h1>
+    <input type="range" id="range">
+    <input type="color" id="color">
+
+
+    <script>
+        setInterval(()=>{
+            let a = document.getElementById("color").value;
+            document.getElementById("backg").style.backgroundColor= a
+            let b = document.getElementById("range").value;
+            document.getElementById("head").style.fontSize = b + "px";
+        },10)
+
+
+    </script>
+</body>
+</html>
