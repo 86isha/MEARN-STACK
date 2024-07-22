@@ -16,7 +16,6 @@
 
     <script>
 
-
         //push
         //pop
         //shift
@@ -29,7 +28,37 @@
         // filter
         // reduce
 
+         // push -- it push to last indexing
+        // pop -- it takes from last indexing
+        // unshift - it push to first indexing
+        // shift -- it pop from first indexing
+        // slice -- it takes two argumnet ( , )-- it gives us the sliced value (first_value, last_value), last value is excluded -- it does not change the qrignal array
+        // splice -- it takes three argument  -- it delete the values given position from first and second and put the thrid the argument -- it is not indexing -- it change the original array
+        
+        
+        // it is newly introduce in 
+        // map -- it helps us to give the arethmetic operation to each the array values-- it does not check condition
+        // filter --it helps us to give the logical operation to each the array values -- it check condtions -- if the condtion is true than it give if not so not give
+        // reduce -- it gives us to do arethmic operation on each value of array with each other
 
+        // high order function
+
+        let a = [100,200,300,400,500,600,700,80,90,1000,4,324];
+
+        let b =a.map((item)=>{
+            return item*2;
+        })
+        let c =a.filter((item)=>{
+            return item>200;
+        })
+        console.log(c)
+        let d= a.reduce((x,y)=>{
+            return x+y;
+        })
+
+        // a.splice(4, 6, )
+        // a.slice
+        // console.log(a)
 
         //  let a = [];
         
@@ -61,13 +90,11 @@
         //     return item>100;
         // })
         
-        let d=[1,2,3,4,5,6];
+        let f = [1,2,3,4,5,6];
 
         let e= a.reduce((x,y)=>{
             return x+y;
         })
-
-
 
 
 
