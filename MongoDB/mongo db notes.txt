@@ -14,3 +14,16 @@ db.createCollection('')--- to make collection
 Jason file is---- array[] of objects{}
 
 db.dropDatabase('')--- to drop database means delete
+
+
+$$Root- it is the parent's parent folder, main folder, overall docs
+$addToSet- it saves key in the array but not duplicate
+$push-
+
+
+addFields: to add another field in another document
+
+$sort{
+    salary: 1        ----------(it will sort the document in ascending order(+))
+    salary: -1       ----------(it will sort the document in descending order(-))
+}
