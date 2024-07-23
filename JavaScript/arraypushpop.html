@@ -22,11 +22,19 @@
         //unshift
         //slice
         //splice
-
+        
 
         // map
         // filter
         // reduce
+
+        //split
+        //join
+        //flat
+
+
+
+
 
          // push -- it push to last indexing
         // pop -- it takes from last indexing
@@ -43,18 +51,25 @@
 
         // high order function
 
-        let a = [100,200,300,400,500,600,700,80,90,1000,4,324];
 
-        let b =a.map((item)=>{
-            return item*2;
-        })
-        let c =a.filter((item)=>{
-            return item>200;
-        })
-        console.log(c)
-        let d= a.reduce((x,y)=>{
-            return x+y;
-        })
+        // let a = [100,200,300,400,500,600,700,80,90,1000,4,324];
+
+        // let b =a.map((item)=>{
+        //     return item*2;
+        // })
+         // let b =a.map((item,index)=>{
+        //     return item*2;
+        // })
+        // let b =a.map((item,index,array)=>{
+        //     return item*2;
+        // })
+        // let c =a.filter((item)=>{
+        //     return item>200;
+        // })
+        // console.log(c)
+        // let d= a.reduce((x,y)=>{
+        //     return x+y;
+        // })
 
         // a.splice(4, 6, )
         // a.slice
@@ -90,17 +105,36 @@
         //     return item>100;
         // })
         
-        let f = [1,2,3,4,5,6];
+        // let f = [1,2,3,4,5,6];
 
-        let e= a.reduce((x,y)=>{
-            return x+y;
-        })
+        // let e= a.reduce((x,y)=>{
+        //     return x+y;
+        // })
 
 
 
-        document.querySelector("#pop").onclick=()=>{
+        // let a= "10,20,30,40,50,60,70";
+        //split-- changes string to array
+        // console.log(a)
+        // let b= a.split(",");
+        // console.log(b)
+
+        //join-- changes arrays to strings
+        //console.log(b.join(","))
+
+        //flat(num)--(num is default 1) to change 2d arrays into 1d array, if 3d to 1d then num=2 and if 4d to 1d then num= 3
+        //2d array-- [10,20,30,[50,80,90],20,30]
+        //1d array-[10,20,30,30,40,50,50]
+        //3d array--[10,20.30,40,[50,60,[10,30,40,50,30],70,80],90,10,50,70]
+        //4d array--[10,20.30,40,[50,60,[10,30,40,[20,30,40],50,30],70,80],90,10,50,70]
+
+        // let x= [10,20.30,40,[50,60,[10,30,40,50,30],70,80],90,10,50,70]
+
+        // console.log(x.flat(1))
+
+        // document.querySelector("#pop").onclick=()=>{
             
-        }
+        // }
 
 
     </script>
