@@ -1,0 +1,2 @@
+nodes is environment that provide us to do js coding
+basically NODE is environment of JS 

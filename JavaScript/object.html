@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // let obj= {
+        //     id: 101,
+        //     fname:"Mohit",
+        //     lname:"sharma",
+        //     age:38,
+        //     city:"jaipur",
+        //     mobile:6377901097,
+        //     skills:["C","C++","python", "mern", "django" ],
+        //     fullname: function(){
+        //         console.log(this.fname, this.lname)
+        //     },
+        //     marks: {
+        //         physics: 85,
+        //         chemistry:55,
+        //         maths:80
+        //     }
+        // }
+
+
+        // console.log(obj)
+        // console.log(obj.fname)
+        // console.log(obj.lname)
+        // console.log(obj["fname"])
+        // console.log(obj["lname"])
+
+        // for(let i in obj){
+        //     console.log(obj.marks)
+        //     console.log(obj.fullname())
+        // }
+
+        let array_object =[
+            {
+                id: 101,
+                fname:"Mohit",
+                lname:"sharma",
+                age:38,
+                city:"jaipur",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 102,
+                fname:"Rohit",
+                lname:"sharma",
+                age:18,
+                city:"Udaipur",
+                mobile:6377901097,
+                skills:["C","java", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 90,
+                    chemistry:55,
+                    maths:70
+                }
+            },
+            {
+                id: 103,
+                fname:"aman",
+                lname:"sharma",
+                age:28,
+                city:"delhi",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 104,
+                fname:"aditi",
+                lname:"sigh",
+                age:38,
+                city:"jodhpur",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 105,
+                fname:"vihan",
+                lname:"gupta",
+                age:32,
+                city:"jodhpur",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 106,
+                fname:"isha",
+                lname:"gupta",
+                age:34,
+                city:"jaipur",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 107,
+                fname:"avisha",
+                lname:"mehra",
+                age:24,
+                city:"jaipur",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 108,
+                fname:"rajveer",
+                lname:"sharma",
+                age:42,
+                city:"delhi",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 109,
+                fname:"rishi",
+                lname:"mehra",
+                age:24,
+                city:"bombay",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            },
+            {
+                id: 110,
+                fname:"anjali",
+                lname:"mantri",
+                age:22,
+                city:"jodhpur",
+                mobile:6377901097,
+                skills:["C","C++","python", "mern", "django" ],
+                fullname: function(){
+                    console.log(this.fname, this.lname)
+                },
+                marks: {
+                    physics: 85,
+                    chemistry:55,
+                    maths:80
+                }
+            }
+        ]
+
+        let a = array_object.filter((item)=>{
+            return item.age>18;
+        })
+        console.log(a)
+
+        
+    </script>
+</body>
+</html>
