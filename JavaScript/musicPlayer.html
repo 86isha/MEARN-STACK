@@ -23,31 +23,69 @@
             border-radius: 20px;
             font-size: 20px;
         }
+        .keybutton{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .keybutton button{
+            color: black;
+            border-radius: 20px;
+            font-size: 20px;
+            width: 20%;
+
+        }
     </style>
 </head>
 <body>
     <div class="player">
-        <audio controls src="Maan Meri Jaan (Female Version)(PagalWorld.com.sb).mp3"></audio>
+        <audio controls src="" ></audio>
         <br><br>
-        <button>Audio 1</button>
-        <button>Audio 2</button>
-        <button>Audio 3</button>
-        <button>Audio 4</button>
-        <button>Audio 5</button>
-        <button>Audio 6</button>
-        <button>Audio 7</button>
-        <button>Audio 8</button>
+        <div class="keybutton">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="random">Random</button>
+        </div>
+        <br><br>
+        <button id="1">Maan meri jaan</button>
+        <button id="2">Piya Tose</button>
+        <button id="3">Tere Hawale</button>
+        <button id="4">Tum se Hi</button>
     </div>
 
 
 
 
     <script>
-        let audio= document.querySelector("audio");
+        let audio= document.querySelector("audio")
+        let button= document.querySelectorAll("button")
+        function PlayMusic(id){
+            audio.src = `audio${id}.mp3`
+            audio.id = id;
+            audio.play()
 
-        document.querySelector("button"){
-            
         }
+        for(let i of button){
+            i.onclick = function(){
+                count=document.querySelector("audio").src;
+                if(i.id == "prev"){
+                    let get_id = Number(document.querySelector("audio").id)
+                    PlayMusic(--get_id)
+                    
+                }
+                else if(i.id == "next"){
+                    // console.log("i am in")
+                    let get_id = Number(document.querySelector("audio").id)
+                    PlayMusic(++get_id)
+                }
+                else{
+                    PlayMusic(i.id)
+                }
+                
+            }
+        }
+
 
     </script>
 </body>

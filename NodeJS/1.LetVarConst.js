@@ -50,18 +50,19 @@
 //   console.log("hello");
 // }
 
-const calculator = (a, b, operation) => {
-    return operation(a, b);
-  };
-  var a = 5;
-  var b = 3;
-  console.log(
-    calculator(a, b, (a, b) => {
-      return a + b;
-    })
-  );
-  // console.log(
-  //   calculator(4, 3, (a, b) => {
-  //     return a - b;
-  //   })
-  // );
+// const calculator = (a, b, operation) => {
+//   return operation(a, b);
+// };
+// var a = 5;
+// var b = 3;
+// console.log(
+//   calculator(a, b, (a, b) => {
+//     return a + b;
+//   })
+// );
+
+// console.log(
+//   calculator(4, 3, (a, b) => {
+//     return a - b;
+//   })
+// );
