@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- call back function are known as high order function in python -->
+
+
+
+
+
+    <script>
+        // function x(i){
+        //     i();
+        // }
+        // function y(){
+        //     console.log("i am the y function")
+        // }
+        // x(y)
+        
+        function output (x, y, z){
+            z(x,y)
+        }
+        function sum (a,b){
+            console.log(a+b)
+        }
+        output(10,200,sum)
+    </script>
+</body>
+</html>

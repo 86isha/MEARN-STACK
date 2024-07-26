@@ -55,7 +55,7 @@
                 },
                 marks: {
                     physics: 85,
-                    chemistry:55,
+                    chemistry:85,
                     maths:80
                 }
             },
@@ -122,9 +122,9 @@
                     console.log(this.fname, this.lname)
                 },
                 marks: {
-                    physics: 85,
-                    chemistry:55,
-                    maths:80
+                    physics: 35,
+                    chemistry:25,
+                    maths:20
                 }
             },
             {
@@ -139,9 +139,9 @@
                     console.log(this.fname, this.lname)
                 },
                 marks: {
-                    physics: 85,
-                    chemistry:55,
-                    maths:80
+                    physics: 98,
+                    chemistry:99,
+                    maths:99
                 }
             },
             {
@@ -156,9 +156,9 @@
                     console.log(this.fname, this.lname)
                 },
                 marks: {
-                    physics: 85,
-                    chemistry:55,
-                    maths:80
+                    physics: 88,
+                    chemistry:35,
+                    maths:32
                 }
             },
             {
@@ -173,9 +173,9 @@
                     console.log(this.fname, this.lname)
                 },
                 marks: {
-                    physics: 85,
+                    physics: 34,
                     chemistry:55,
-                    maths:80
+                    maths:66
                 }
             },
             {
@@ -214,12 +214,13 @@
             }
         ]
 
-        let a = array_object.filter((item)=>{
-            return item.age>18;
-        })
+        // let a = array_object.filter((item)=>{
+        //     return item.age>18;
+        // })
+        
+        let a = array_object.filter((item)=>(item.marks.physics + item.marks.chemistry + item.marks.maths)/3 >75)
         console.log(a)
 
-        
     </script>
 </body>
 </html>
