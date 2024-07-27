@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" >
+    <input type="submit" id="click">
+
+    
+    <script>
+        count= 0
+        let val;
+        document.querySelector("#click").onclick = function(){
+    
+            let a= document.querySelector("input").value;
+    
+            let heading = document.createElement("h1");
+            let complete_btn= document.createElement("button");
+            let delete_btn= document.createElement("button");
+            heading.className = count
+            complete_btn.className = count
+            delete_btn.className = count
+            count++
+            heading.innerHTML = a;
+            complete_btn.innerText = "Complete";
+            delete_btn.innerText= "Delete";
+            
+
+            document.body.append(heading)
+            document.body.append(complete_btn)
+            document.body.append(delete_btn)
+
+            val= document.querySelectorAll("button")
+            console.log(val)
+            
+            for(i of val){
+                
+            
+           console.log(i)
+
+           i.onclick = function(){
+              
+              console.log(i)
+           }
+                
+
+            } 
+
+        }
+
+        // for(let i=0; i<100; i++){
+
+        //     let a = document.createElement("button");
+        // }
+
+       
+
+    </script>
+</body>
+</html>

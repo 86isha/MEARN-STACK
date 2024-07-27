@@ -1,2 +1,33 @@
 express is a javascript framework
 
+
+
+
+
+
+
+
+
+
+
+
+https methods
+1. get: any information that is served by the server to the frontend
+2. post: any information taken from frontend by the server
+3. put: any information updated by the server to the frontend 
+4. delete: any information deleted by the server to the frontend
+5. patch: any specific information updated by the server to the frontend
+
+kisi bhi information ko create karna ==> POST
+information ko update karna ==> PUT PATCH
+delete karna ==> delete
+aur read karna ==> GET
+
+
+agar browser POST kr rha toh server GET kr rha h aur agar browser GET kr rha h toh server POST kr rha h 
+so this story is according to browser
+yeh browser k perspective k according chalega 
+
+
+server be like kyunki browser ne kha isliye i am doing this work 
+kar server hi rha h but browser k kehne pr
