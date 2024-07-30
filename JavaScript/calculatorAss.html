@@ -12,8 +12,8 @@
             
         }
         .calc{
-            width: 500px;
-            background-color: black;
+            width: 400px;
+            background-color: #2b2f37;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -28,8 +28,11 @@
         .display input{
             height: 100%;
             width: 100%;
-            border-radius: 10px;
+            /* border-radius: 10px; */
             font-size: 40px;
+            background-color: #2b2f37;
+            border: none;
+
         }
         .keys{
             width: 90%;
@@ -40,40 +43,62 @@
             justify-content: center;
         }
         .keys button{
-            height: 40px;
-            width: 20%;
+            height: 60px;
+            width: 60px;
             margin: 15px 10px;
-            border-radius: 5px;
+            border-radius: 50%;
+            border: none;
             flex-grow: 1;
+            box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+            background-color: #2b2f37;
+            color: white;
+        }
+        .gg{
+            color: black !important;
+            background-color: grey !important;
+            font-weight: 300 !important;
+        }
+        .yy{
+            background-color: rgb(175, 175, 29) !important;
         }
     </style>
 </head>
 <body>
-    <h1>CALCULATOR</h1>
+    <!-- <h1>CALCULATOR</h1> -->
     <div class="calc">
         <div class="display">
             <input type="text" id="">
         </div>
         <div class="keys">
-            <button>9</button>
-            <button>8</button>
+            <button class="gg">AC</button> 
+            <button  class="gg">DEL</button>
+            <button  class="gg">%</button> 
+            <button  class="yy">/</button>
+
             <button>7</button>
-            <button>+</button>
-            <button>6</button>
-            <button>5</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="yy">*</button> 
+
             <button>4</button>
-            <button>-</button>
-            <button>3</button>
-            <button>2</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="yy">-</button>
+            
             <button>1</button>
-            <button>/</button>
-            <button>.</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="yy">+</button>
+            
             <button>0</button>
-            <button>=</button>
-            <button>*</button>  
-            <button>%</button>  
-            <button>DEL</button>
-            <button>CLEAR</button> 
+            <button>00</button>
+            <button>.</button>
+            <button class="yy">=</button>
+             
+             
+            
+            
+            
         </div>
     </div>
  
@@ -91,7 +116,7 @@
                     let val= inp.value;
                     inp.value = eval(val)
                 }
-                else if(i.innerText == "CLEAR"){
+                else if(i.innerText == "AC"){
                     inp.value =" "
                 }
                 else if(i.innerText == "DEL"){
