@@ -23,6 +23,7 @@
             heading.className = count
             complete_btn.className = count
             delete_btn.className = count
+            complete_btn.id = "comp"
             count++
             heading.innerHTML = a;
             complete_btn.innerText = "Complete";
@@ -33,21 +34,21 @@
             document.body.append(complete_btn)
             document.body.append(delete_btn)
 
-            val= document.querySelectorAll("button")
+            val= document.querySelectorAll("#comp")
             console.log(val)
             
-            for(i of val){
+        //     for(i of val){
                 
             
-           console.log(i)
+        //    console.log(i)
 
-           i.onclick = function(){
+        //    i.onclick = function(){
               
-              console.log(i)
-           }
+        //       console.log(i)
+        //    }
                 
 
-            } 
+        //     } 
 
         }
 
