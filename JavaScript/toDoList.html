@@ -23,7 +23,6 @@
             heading.className = count
             complete_btn.className = count
             delete_btn.className = count
-            complete_btn.id = "comp"
             count++
             heading.innerHTML = a;
             complete_btn.innerText = "Complete";
@@ -34,28 +33,29 @@
             document.body.append(complete_btn)
             document.body.append(delete_btn)
 
-            val= document.querySelectorAll("#comp")
-            console.log(val)
-            
-        //     for(i of val){
-                
-            
-        //    console.log(i)
 
-        //    i.onclick = function(){
-              
-        //       console.log(i)
-        //    }
-                
+            complete_btn.onclick = function(event){
+                let b = document.getElementsByClassName(event.target.className);
+                b[0].style.textDecoration = "line-through"
+            }
 
-        //     } 
-
+            delete_btn.onclick = function(event){
+                let b = document.getElementsByClassName(event.target.className);
+                for(let i of b){
+                    i.remove()
+                }
+                b[0].remove()
+            }
         }
 
-        // for(let i=0; i<100; i++){
+            
 
-        //     let a = document.createElement("button");
-        // }
+
+
+
+
+
+            
 
        
 
