@@ -33,7 +33,17 @@
 
 
     <script>
-        
+        let a = () =>{
+                        let a = document.querySelectorAll(".gender")
+                        for(let val of a){
+                            if(val.checked == true){
+                            return val.value;
+                            }
+                        } 
+                        
+        }
+
+
         document.querySelector("#submit").onclick= function() {
             let obj = 
             {
@@ -41,16 +51,14 @@
                 age: document.querySelector("#age").value,
                 mobile: document.querySelector("#mobile").value,
                 email: document.querySelector("#email").value,
-                gender: ()=>{
-                            let a = document.getElementsByClassName("gender");
-                            a.checked==true
-                                return a;
-                        },
-
+                gender: a(),
                 location: document.querySelector("#location").value,
             }
             console.log(obj)
-         }
+        }
+
+
+        //jsom
         
         
 

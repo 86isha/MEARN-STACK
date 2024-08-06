@@ -3,59 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: linear-gradient(100deg, #575656, #062e3f);
+            height: 100vh;
+        }
+        .bodd{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mainhead{
+            animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
+                       animated-cursor 750ms steps(11,end) infinite;
+            font-size: 80px;
+            text-align: center;
+            color: white;
+            border-right: solid 3px rgba(0, 0, 0, 0.75);
+            white-space: pre;
+            overflow: hidden;
+            letter-spacing: 0.10rem;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            max-width: 550px;
+            display: block;
+            font-family: cursive !important;
+            
+        }
+        @keyframes animated-text{
+            from{width: 0%;}
+            to{width: 480px;}
+        }
+  
+        @keyframes animated-cursor{
+            from{border-right-color: rgba(0, 0, 0, 0.75);}
+            to{border-right-color: transparent;}
+        }
+        .list {
+            margin-top: 50px;
+            display: flex;
+            font-size: 1.7rem;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            width: 100%;
+        }
+        #type{
+            padding: 10px;
+            font-size: 17px;
+            border: none;
+            outline: none;
+            border-top-left-radius: 17px;
+            border-bottom-left-radius: 17px;
+            max-width: 500px;
+            transition: background-color 200ms ease-in-out;
+            width: 100%;
+            background-color: #181a1a;
+            color: rgb(247, 226, 223);
+        }
+        #type:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        #click{
+            padding: 10px;
+            font-size: 17px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            min-width: 100px;
+            background-color: rgb(247, 226, 223);
+            color: rgb(0, 0, 0);
+            border: none; 
+        }
+        #click:hover{
+            background-color: white;
+            box-shadow: #fff8 0 0 10px;
+        }
+        .task{
+            margin-top: 30px;
+            border: none;
+            display: inline;
+            text-align: center;
+            
+            
+        }
+        .task h2{
+            display: inline;
+            text-align: center;
+            color: white;
+            font-size: 1.4rem !important;
+            font-family: 'Work Sans', sans-serif !important;
+            margin-right: 40px;
+            width: 60%;
+            text-align: left;
+        }
+        .task div button{
+            font-size: 19px;
+            cursor: pointer;
+            width: 2em;
+            height: 2em;
+            border-radius: 80%;
+            margin: 0 5px;
+            border: none;
+            background-color: rgb(247, 226, 223);
+            color: rgb(0, 0, 0);
+        }
+        .task div button:hover{
+            background-color: white;
+            box-shadow: #fff8 0 0 10px;
+        }
+        .task div{
+            margin: 1rem;
+            font-size: 19px;
+            display: flex;
+            align-items: center;
+            padding: 0.25em 0.5em;
+            border-radius: 30px;
+            overflow-wrap: anywhere;
+            background-color: rgb(26, 27, 27);
+        }
+
+        div h2,button{
+            display: inline;
+        }
+
+    </style>
 </head>
 <body>
-    <input type="text" >
+    <div class="bodd">
+    <h1 class="mainhead">Lets do it....</h1>
+    <div class="list">
+    <input type="text" id="type" placeholder="Add your task">
     <input type="submit" id="click">
+    </div>
+    
+    <div class="task"></div>
+    </div>
+    
 
     
     <script>
         count= 0
         let val;
+        let task = document.querySelector(".task")
         document.querySelector("#click").onclick = function(){
-    
             let a= document.querySelector("input").value;
-    
-            let heading = document.createElement("h1");
-            let complete_btn= document.createElement("button");
-            let delete_btn= document.createElement("button");
-            heading.className = count
-            complete_btn.className = count
-            delete_btn.className = count
-            count++
-            heading.innerHTML = a;
-            complete_btn.innerText = "Complete";
-            delete_btn.innerText= "Delete";
+            console.log(a)
+                if(a == ""){
+                alert("You must write something!");
+            }
+            else{
+
+                let c= document.querySelector("input").value;
+                let heading = document.createElement("h2");
+                let complete_btn= document.createElement("button");
+                let delete_btn= document.createElement("button");
+                let div = document.createElement("div");
+
+                heading.className = count
+                complete_btn.className = count
+                delete_btn.className = count
+                
+                // complete_btn.id = Comp
+                // delete_btn.id = Del
+        
+                heading.innerHTML = c;
+                complete_btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+                delete_btn.innerHTML= '<i class="fa-solid fa-trash"></i>';
+                count++
+                
+
+                task.appendChild(div)
+                div.appendChild(heading)
+                div.appendChild(complete_btn)
+                div.appendChild(delete_btn)
+
+                document.querySelector("input").value=''
+                document.querySelector("input").focus()
+
+
             
 
-            document.body.append(heading)
-            document.body.append(complete_btn)
-            document.body.append(delete_btn)
-
-
-            complete_btn.onclick = function(event){
-                let b = document.getElementsByClassName(event.target.className);
-                b[0].style.textDecoration = "line-through"
-            }
-
-            delete_btn.onclick = function(event){
-                let b = document.getElementsByClassName(event.target.className);
-                for(let i of b){
-                    i.remove()
+                complete_btn.onclick = function(event){
+                    heading.style.textDecoration = "line-through"
                 }
-                b[0].remove()
+
+                delete_btn.onclick = function(event){
+                    div.remove()
+                }
             }
         }
-
+        
             
 
-
-
-
-
-
-            
 
        
 
